@@ -1,0 +1,56 @@
+
+
+/ Set a background color or gradient /
+body {
+  background: linear-gradient(to bottom, #312268, #000);
+}
+
+/ Define styles for the header /
+header {
+  background-color: #860b0b;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/ Define styles for the main section /
+main {
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.css-snippet {
+  background-color: #195e28;
+  padding: 10px;
+  border-radius: 4px;
+  user-select: all;
+}
+
+/ Define styles for the footer if needed */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
