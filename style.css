@@ -1,101 +1,124 @@
-
-body{
-  background: #080808;
-  color: #fff;
-  margin:0;
-  padding:0;
-  font-family: Arial;
-}
-
-nav {
-  justify-content: right;
-  display: flex;
-  background-color: #d8a47f;
-}
-
-nav a {
-  color: #13293d;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
-}
-nav a:hover{
-background: white;
-}
-
-footer{
-  padding:0;
-  margin:0;
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-color: tan;
 }
-.footer content{
-width: 100%;
-padding: 70px 30px 20px;
+body{
+  background: #fcfcfc;
 }
-.socials ul{
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+main {
+  /* Turns this element into a flexbox */
   display: flex;
-  justify-content: center;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
 }
-.socials ul a{
-text-decoration: none;
-padding: 10px;
-background-color: white;
-margin: 10px;
-border-radius: 50%;
-}
-.socials ul a i{
-  font-size: 2em;
-  color:black;
-  opacity:0.9;
-}
-/* Hover Effects on Social Media Icons*/
-.socials a:hover{
-  background-color:#111;
-  transition: 0.5;
-}
-.footerNav{
-  margin: 30px 0;
-}
-.footerNav ul{
+
+.main-header {
   display: flex;
-  justify-content: center;
-  list-style-type: none disc;
+  /* Defines how to distribute the empty space between child elements */
+  justify-content: space-between;
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
 }
-.footerNav ul li a{
-  color:white;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.3em;
-  opacity: 0.7;
-  transition: 0.5s;
+
+.card {
+  /* A flex-basis of 200px sets the starting width */
+  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
 }
-.footerNav ul li a:hover{
-  opacity: 1;
-}
-.footerbottom{
-  background-color: #000;
+
+.card header {
   padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card.camera {
+  /* With a flex-grow value of 2, this element grows twice as wide as others */
+  /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
+  flex: 2 1 200px;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
-.footerbottom p{
-  color: white;
-}
-.designer{
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.footer-content h3{
+  font-size: 1.8rem;
   font-weight: 400;
-  margin:0px 5px ;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
-@media (max-width:700px){
-  .footerNav ul li{
-    width: 100%;
-    text-align: center;
-    margin:10px;
-  }
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
 }
-  
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
 
 
   
