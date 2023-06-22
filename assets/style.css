@@ -9,6 +9,45 @@
 body {
   background: #44a08d;
 }
+
+li, a , button{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #080808;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:30px 10%;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+ 
+}
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+  color: blue;
+   cursor: pointer;
+}
+
+button{
+  padding: 9px 25px;
+  background-color: aqua;
+  border:none;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+  margin-left:20px;
+}
+button:hover {
+  background-color:blue
+}
 .wrapper{
   margin:10px auto;
   padding: 0 10%;
