@@ -14,7 +14,7 @@ li, a , button{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #080808;
+  color: #09edf5;
   text-decoration: none;
 }
 header{
@@ -32,13 +32,13 @@ header{
   transition: all 0.3s ease 0s;
 }
 .nav_links li a:hover{
-  color: blue;
+  color: rgb(8, 8, 8);
    cursor: pointer;
 }
 
 button{
   padding: 9px 25px;
-  background-color: aqua;
+  background-color: rgb(8, 8, 8);
   border:none;
   border-radius: 50px;
   cursor:pointer;
@@ -46,7 +46,7 @@ button{
   margin-left:20px;
 }
 button:hover {
-  background-color:blue
+  background-color:rgb(253, 251, 251)
 }
 .wrapper{
   margin:10px auto;
@@ -106,9 +106,28 @@ box-shadow: 0 10px 15px rgba(0,0,0,0.3)
 }
 
 @media (max-width:770px) {
-  .wrapper{
+  .nav-links {
     padding: 20px;
   }
+   .wrapper {
+    padding: 20px;
+
+  }
+  .nav-links ul a {
+    padding: 20px;
+}
+ .div img {
+  padding: 2px;
+}
+}
+
+#fixed-box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 250px;
+  border-radius: 450px;
+  height: 250px;
 }
 
 footer{
