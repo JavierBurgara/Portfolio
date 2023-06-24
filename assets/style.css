@@ -71,17 +71,29 @@ h1{
   padding: 20px;
   text-align: center;
   border-radius: 5px;
-  background: #fff;
+  background: #0e0000;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  
 }
 .box img{
-  height: 70px;
+  height: 200px;
 }
 
 .box h2{
   color:#444;
   padding: 10px 0;
   font-size: 20px;
+}
+.images a {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.images img{
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  width: 300px;
 }
 
 .btn{
@@ -104,19 +116,28 @@ letter-spacing: 1px;
 box-shadow: 0 10px 15px rgba(0,0,0,0.3)
 }
 
-@media (max-width:770px) {
+@media (max-width:768px) {
   .nav-links {
-    padding: 20px;
+    width: 95%;
   }
    .wrapper {
-    padding: 20px;
+    width: 95%;
 
   }
   .nav-links ul a {
-    padding: 20px;
+    width: 95%;
 }
- .div img {
-  padding: 2px;
+  .images {
+  width: 95%;
+}
+.box img{
+  width: 95%;
+}
+
+.container{
+  width: 95%;
+} .div #fixed-box{
+  width: 95%;
 }
 }
 
